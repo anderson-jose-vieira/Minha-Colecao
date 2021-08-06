@@ -1,0 +1,413 @@
+/*Resetando as configurações que vem por padrão*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none; 
+    color: rgb(49, 49, 49);
+}
+
+/*fazendo o alinhamento*/
+header{
+    min-height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 68, 68);
+}
+
+/*Alterando a cor do h1 e seu tamanho*/
+header h1{
+    font-size: 2.5em;
+    color: #fff;
+}
+
+main{
+    width: 100%; /*100 porcento de largura*/
+    min-height: 100vh; /*Ocupar toda a tela disponivel*/
+    /* background: linear-gradient(rgb(72, 149, 250),#fff); cor de fundo em degrade */
+    background-image: url("/img/img_fundo.jpg");
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 2px 3px rgba(0,0,0,0.25); /*Efeito de sombra leve*/   
+}
+
+
+main form{
+    margin-top: 3%;
+    width: 35%;
+    height: 80vh;
+    background-color: rgb(238, 238, 238) ;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.4) inset 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 18px;
+    padding:2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .inputs-container{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+/*Dentro do Main, temos o Form cujo o nome (Class) foi data inputs-container, vamos estilizar ela*/
+main form .inputs-container input{
+    width: 90%;
+    height: 120%;
+    padding: 8px 15px;
+    border: 0; /*tira a borda*/
+    outline: 0; /*Quando clicar não vai ficar a borda por fora*/
+    border-radius: 12px; /*para arredondar a borda*/
+    font-size: 16px;
+    color: rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+
+main form .inputs-container input:focus{ /*cria uma pseudoclasse*/
+    box-shadow: inset 1px 4px 7px rgba(0,0,0,0.5) ; /*Quando clicar no elemente, ele da um efeito de sombra.*/
+}
+
+main form .password-container {
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .div-login{
+    display: flex;
+    width: 16%;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+/* Estilizar as tags i */
+main form .password-container i{ 
+    position: absolute;
+    right: 8%;
+    top: 30%;
+    color: rgba(75, 74, 74, 0.5);
+    cursor: pointer; /*passou o cursor por cima, ele aponta*/
+}
+
+main form .password-container #eye{
+    display: none;
+}
+
+main form .password-infos{
+    width: 90%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main form .password-infos a {
+    transition: 0.2s ease-in-out;
+}
+
+main form .password-infos a:hover{ /*pseudo classe para fazer alguma coisa quando passar o mouse em cima*/
+    color: rgb(41, 141, 255); 
+}
+
+main form button {
+    background-color: rgb(0, 128, 240);
+    color: rgb(255, 255, 255);
+    width: 90%;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 12px;
+    margin-top: 10%;
+    font-size: 1.6em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0,3s ease-in-out;
+}
+
+main form button:hover {
+    background-color: #fff;
+    color: rgb(0, 128, 240);
+
+}
+
+main form .links-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*para ele ficarem em coluna*/
+    align-items: center;
+    margin-top: 10%;
+}
+
+main form .links-container span{
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+main form .links-container aside{
+    margin-top: 5%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*dividir o espaço igual para todos*/
+}
+
+main form .links-container aside i{
+    font-size: 1.6em;
+    background-color: #fff;
+    padding: 8px; /*espaçamento interno*/
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form .links-container aside .google{
+    color: #f71500;
+}
+
+main form .links-container aside .google:hover{
+    background-color: #f71500;
+    color: #fff;
+}
+main form .links-container aside .linkedin{
+    color: #006492;
+}
+
+main form .links-container aside .linkedin:hover{
+    background-color: #006492;
+    color: #fff;
+}
+main form .links-container aside .facebook{
+    color: #2400a8;
+}
+
+main form .links-container aside .facebook:hover{
+    background-color: #2400a8;
+    color: #fff;
+}
+
+main form footer{
+    width: 100%;
+    margin-top: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form footer hr{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(17, 13, 255);
+}
+
+main form footer span{
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-top: 5%;
+}
+
+main form footer a{
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+main form footer a:hover{
+    color: rgb(0, 128, 240)
+}
+
+main form .inputs-form{
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    font-size: 80%; 
+
+}
+
+main form .inputs-form  #sign{
+    position: absolute;
+    align-items: center;
+    right: 65%;
+    /* top: 0,4%;  */
+    display: flex;
+}
+
+main form .inputs-form  #email{
+    position: absolute;
+    right: 53%;
+    top: 38.5%;
+}
+
+main form .inputs-form  #chave1{
+    position: absolute;
+    right: 53%;
+    top: 50%;
+}
+
+main form .inputs-form  #chave2{
+    position: absolute;
+    right: 55.5%;
+    top: 62%;
+}
+
+main form .inputs-form .nomeCad{
+    width: 80%;
+    align-self: center;
+    border: 0; /*tira a borda*/
+    outline: 0; /*Quando clicar não vai ficar a borda por fora*/
+    border-radius: 12px; /*para arredondar a borda*/
+    font-size: 150%;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+
+main form .inputs-form .emailCad{
+    width: 80%;
+    align-self: center;
+    border: 0; /*tira a borda*/
+    outline: 0; /*Quando clicar não vai ficar a borda por fora*/
+    border-radius: 12px; /*para arredondar a borda*/
+    font-size: 150%;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+
+main form .inputs-form .senhaCad{
+    width: 80%;
+    align-self: center;
+    border: 0; /*tira a borda*/
+    outline: 0; /*Quando clicar não vai ficar a borda por fora*/
+    border-radius: 12px; /*para arredondar a borda*/
+    font-size: 150%;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+
+main form .inputs-form .repsenhaCad{
+    width: 80%;
+    align-self: center;
+    border: 0; /*tira a borda*/
+    outline: 0; /*Quando clicar não vai ficar a borda por fora*/
+    border-radius: 12px; /*para arredondar a borda*/
+    font-size: 150%;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+
+main form .inputs-esqueceu .emailEsquece{
+    width: 100%;
+    align-self: left;
+    border: 0; /*tira a borda*/
+    outline: 0; /*Quando clicar não vai ficar a borda por fora*/
+    border-radius: 12px; /*para arredondar a borda*/
+    font-size: 130%;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+
+main .form2{
+    margin-top: 3%;
+    width: 35%;
+    height: 50%;
+    background-color: rgb(238, 238, 238) ;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.4) inset 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 18px;
+    padding:2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .cadastro-elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding-top: 20px;
+}
+
+main form .cadastro-elements h2{
+    margin-left: 10px;
+}
+
+main #Formulario{
+    margin-top: 3%;
+    width: 35%;
+    height: 35%;
+    background-color: rgb(238, 238, 238) ;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.4) inset 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 18px;
+    padding:2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Retirando a bolinha da frente dos nomes dos filmes */
+li{
+    list-style: none;
+}
+
+main #Input{
+    width: 100%;
+    height: 80%;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.4) inset 0px 4px 4px rgba(0,0,0,0.25);
+    
+}
+
+/* Estilizando o formulário onde lista os filmes */
+main #listadefilmes{
+    margin: 1;
+    padding: 5;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    align-items: center;
+    
+    font-weight: 400;
+    
+}
+
+main #listadefilmes span{
+    margin-left: 5px;
+}
+
+/* Adicionando um espaço entre os form */
+main #listadefilmes{
+    margin-left: 10px;
+}
+
+/* Estilizando os botoes de excluir os filmes */
+main .DeleteButton{
+    font-size: 15px;
+    background-color: rgb(255, 0, 0);
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+main .DeleteButton:hover {
+    background-color: #fff;
+    color: rgb(240, 0, 0);
+
+}
+

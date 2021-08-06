@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico"> <!--ícone na frente do título da página-->
+    <title>Minha Coleção</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/index.js" defer></script> <!-- o defer é para esquecer esse script por momento e continuar carregando os demais comandos -->
+    <!--Já o async é para fazer o carregamento junto com tudo, assim, o site não fica travado esperando o carregando deste script-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15dea57511.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Minha Coleção</h1> <!--O título do projeto, o restante estará dentro da tag main-->
+    </header>
+
+    <main>
+        <form> <!--Iniciando o formulário-->
+            <div class="div-login">
+                <i class="fas fa-sign-in-alt"></i>
+                <h2 style="text-align: center;">Login:</h2>
+            </div>          
+            
+            <section class="inputs-container"> <!--Sessões do formulário--> 
+               <input type="email" id = "field-email" placeholder="exemplo@gmail.com">
+                <div class="password-container">
+                 <input type="password" id="field-password" class="field-password" placeholder="******">   
+                 <i class="fas fa-eye" id="eye" onclick="showPassword()"></i> <!--Ícone copiado do Font Awesome-->
+                 <i class="fas fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
+               </div>
+            </section>
+            <section class="password-infos">
+                <div>
+                    <input type="checkbox">
+                    <span>Lembrar Senha?</span>                  
+                </div>
+                <a href="esqueceuSenha.html">Esqueceu sua senha?</a>
+            </section>
+            <button id="btn-login" onclick="validarSenha()">Entrar</button>
+
+            <section class="links-container">
+                <span>Ou entre com:</span>
+                <aside>
+                    <a href="https://www.gmail.com/"><i class="fab fa-google-plus-square google" id="google"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin linkedin" id="linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square facebook" id="facebook"></i></a>
+                </aside>
+            </section>
+
+            <footer>
+                <hr> <!--Cria somente uma linha-->
+                <span>Ainda não possui uma conta? <a href="cadastrar.html">Cadastre-se</a></span>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>

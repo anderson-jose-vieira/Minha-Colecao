@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/cadastrar.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15dea57511.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header><h1>Cadastre-se</h1></header>
+    <main>
+        <form>
+            <div class='inputs-form'>
+                <div class="cadastro-elements">
+                    <i class="fas fa-signature"></i>
+                    <h2>Nome Completo:</h2>
+                </div>
+                <input type="text" class="nomeCad">
+
+                <div class="cadastro-elements">
+                    <i class="fas fa-envelope-square"></i>
+                    <h2>E-Mail:</h2>
+                </div>
+
+                <input type="text" class="emailCad">
+                <div class="cadastro-elements">
+                    <i class="fas fa-key"></i>
+                    <h2>Senha:</h2>
+                </div>
+                <input type="password" class="senhaCad" placeholder ="********" style="text-align: center">
+
+                <div class="cadastro-elements">
+                    <i class="fas fa-key"></i>
+                    <h2>Repetir Senha:</h2>
+                </div>
+                <input type="password" class="repsenhaCad" placeholder="********" style="text-align: center">
+                </div>
+
+            <button id="btn-enviar" onclick="verifica()">Enviar</button>
+            <br>
+            <i class="fas fa-home"></i>
+            <a href="index.html">Voltar</a></span>
+        </form>
+    </main>
+    
+</body>
+</html>

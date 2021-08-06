@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Minha Coleção</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <script src="./js/main.js" defer></script>  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15dea57511.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MEUS FILMES</h1>
+    </header>
+     <main class="bodymain"> 
+            <form id="Formulario">
+                <label for="Input">Cadastrar Filme:</label>
+                <input id="Input" type="text" placeholder="Digite o título aqui e tecle enter para inserir" />
+                <h6>Para editar um título, clique sobre ele. Edite e depois tecle enter novamente. Para excluír um título, basta clicar no botão em vermelho.</h6>
+                <br>
+                <div>
+                    <i><i class="fas fa-door-open"></i></i> <!--ícone sair-->
+                    <a href="index.html"> Sair </a>
+                </div>
+            </form>
+            <form id="listadefilmes">
+                <h3>Filmes Cadastrados:</h3>
+                <div id="nomes"></div>
+    
+                <script src="./js/main.js" defer></script>
+            </form>
+
+    </main>
+</body>
+</html>
